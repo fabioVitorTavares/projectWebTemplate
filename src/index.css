@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.background-degrade-fundo {
+  background-image: linear-gradient(to bottom, white 15%, transparent), url('./assets/imagem_fundo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh;
+}
+
+.fundo {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh;
+}
+
+.checkbox {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: #024634;
+}
+
+.imgBanner {
+  /* max-height: 400px;
+  width: fit-content; */
+}
+
+.container-pagina {
+  margin-inline: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: #ecf0f6;
+}
+
+.titulo-pagina {
+  font-size: 36px;
+  color: #024634;
+}
+
+.subtitulo-pagina {
+  font-size: 25px;
+  color: #024634;
+}
+
+.button-return {
+  color: white;
+  font-size: 30px !important;
+}
+
+span, h1, h2, h3, h4, h5, h6, i, p {
+  color: #024634;
+}
+
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  color: white
+}
+
+.background-load {
+  animation: load 1s ease forwards;
+  z-index: 999;
+  position: absolute;
+}
+
+.label-checkbox {
+  @media screen (min-width 1500px) {
+    font-size: 0.8rem !important;
+  }
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+.container-component {
+  overflow-y: auto;
+  z-index: -1,
+}
+
+@keyframes load {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(70, 130, 180, 0.5);
+  }
+}
+
+.menu-lateral {
+  position: fixed;
+  background-color: #024634;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: calc(100vh - 80px);
+  align-items: center;
+  transition: all ease 0.5s;
+}
+
+.menu-lateral:hover {
+  width: 350px;
+}
+
+.menu-lateral:not(:hover) .texto-item-menu-container {
+  animation: texto_desaparecendo 1s ease forwards;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+  gap: 20px;
+}
+
+.menu-item {
+  margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.menu-item-sair {
+  position: absolute;
+  bottom: 10px;
+  opacity: 1;
+}
+
+.icone-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+
+.icone {
+  font-size: 40px !important;
+  width: 50px;
+}
+
+.texto-item-menu-container {
+  width: calc(100% - 100px);
+  animation: texto_aparecendo 1s ease forwards;  
+  overflow: hidden;
+}
+
+
+@keyframes texto_aparecendo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes texto_desaparecendo {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+
